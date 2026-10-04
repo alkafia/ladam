@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayo Berbagi Hasil Temuanmu! — LADAM</title>
+<meta name="description" content="LADAM - Laman Digital Anak: Dunia Ajaib Magnet. Bahan ajar interaktif IPAS Kelas IV SD: Menyelidiki Gaya Magnet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">LADAM</a>
+    <button class="hamburger" aria-label="Buka menu navigasi" onclick="document.getElementById('drawer').classList.add('open')">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu navigasi">
+  <div class="drawer-bg" onclick="document.getElementById('drawer').classList.remove('open')"></div>
+  <nav aria-label="Menu Petualangan">
+    <div class="drawer-head">
+      <span>Menu Petualangan</span>
+      <button class="drawer-close" aria-label="Tutup menu" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Beranda</a>
+      <a href="pengantar.html">Pengantar</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="ayo-bersiap.html">Ayo Bersiap</a>
+      <a href="menjelajah.html">Menjelajah</a>
+      <a href="materi.html">Materi</a>
+      <a href="menyelidiki.html">Menyelidiki</a>
+      <a href="detektif-magnet.html">Detektif Magnet</a>
+      <a href="berbagi.html" class="active">Berbagi</a>
+      <a href="menyimpulkan.html">Menyimpulkan</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="evaluasi.html">Evaluasi</a>
+      <a href="refleksi.html">Refleksi</a>
+      <a href="penutup.html">Penutup</a>
+      <a href="penulis.html">Penulis</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+  <section class="block">
+    <h1 class="page-title center">Ayo Berbagi Hasil Temuanmu!</h1>
+    <p class="lead center">Kerja sama yang luar biasa! Sekarang ceritakan hasil penyelidikan atau simulasimu. Kamu bisa membuat video, infografis, poster, teks cerita, atau bentuk lain sesuka mu.</p>
+    <p class="lead center"><strong>Klik salah satu icon untuk mengunggah hasil temuanmu!</strong></p>
+
+    <div class="center" style="margin-top:1.5rem"><span class="badge-navy">Pilih Bentuk Karyamu</span></div>
+    <div class="linkgrid">
+      <a class="linkcard" href="https://drive.google.com/drive/folders/123EvibC2z1q_uoTO8hbK3St8jghG6REp?usp=drive_link" target="_blank" rel="noopener">
+        <img class="illu" src="img/berbagi-1.png" alt="Ikon papan clapperboard untuk mengunggah video">
+        <span>Video</span>
+      </a>
+      <a class="linkcard" href="https://drive.google.com/drive/folders/1er8Oac7dOyoTnGsKGR_WwB0vjdxloXGZ?usp=drive_link" target="_blank" rel="noopener">
+        <img class="illu" src="img/berbagi-3.png" alt="Ikon pengeras suara untuk mengunggah karya lainnya">
+        <span>Lainnya</span>
+      </a>
+      <a class="linkcard" href="https://drive.google.com/drive/folders/1fbVljUIDZDmml1V8eWVcFRqlzqEaffpN?usp=sharing" target="_blank" rel="noopener">
+        <img class="illu" src="img/berbagi-2.png" alt="Ikon bingkai gambar untuk mengunggah infografis atau poster">
+        <span>Infografis / Poster</span>
+      </a>
+      <a class="linkcard" href="https://drive.google.com/drive/folders/1lP8TYKn8kK78Gpa0iDfDSL6vfuRuCUuD?usp=drive_link" target="_blank" rel="noopener">
+        <img class="illu" src="img/berbagi-4.svg" alt="Ikon selembar kertas untuk mengunggah cerita atau teks">
+        <span>Cerita / Teks</span>
+      </a>
+    </div>
+  </section>
+
+  <nav class="pagenav" aria-label="Navigasi halaman">
+    <a class="btn" href="menyelidiki.html">Kembali</a>
+    <a class="btn" href="menyimpulkan.html">Lanjut</a>
+  </nav>
+</main>
+
+<footer class="site">
+  <p class="f-title">LADAM — Laman Digital Anak: Dunia Ajaib Magnet</p>
+  <p class="f-sub">Bahan ajar interaktif IPAS Kelas IV SD • Disusun oleh Rizki Alkafia Oktavrianto</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

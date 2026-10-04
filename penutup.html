@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penutup — LADAM</title>
+<meta name="description" content="LADAM - Laman Digital Anak: Dunia Ajaib Magnet. Bahan ajar interaktif IPAS Kelas IV SD: Menyelidiki Gaya Magnet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">LADAM</a>
+    <button class="hamburger" aria-label="Buka menu navigasi" onclick="document.getElementById('drawer').classList.add('open')">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu navigasi">
+  <div class="drawer-bg" onclick="document.getElementById('drawer').classList.remove('open')"></div>
+  <nav aria-label="Menu Petualangan">
+    <div class="drawer-head">
+      <span>Menu Petualangan</span>
+      <button class="drawer-close" aria-label="Tutup menu" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Beranda</a>
+      <a href="pengantar.html">Pengantar</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="ayo-bersiap.html">Ayo Bersiap</a>
+      <a href="menjelajah.html">Menjelajah</a>
+      <a href="materi.html">Materi</a>
+      <a href="menyelidiki.html">Menyelidiki</a>
+      <a href="detektif-magnet.html">Detektif Magnet</a>
+      <a href="berbagi.html">Berbagi</a>
+      <a href="menyimpulkan.html">Menyimpulkan</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="evaluasi.html">Evaluasi</a>
+      <a href="refleksi.html">Refleksi</a>
+      <a href="penutup.html" class="active">Penutup</a>
+      <a href="penulis.html">Penulis</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+  <section class="block">
+    <div class="card center penutup-hero">
+      <p class="center"><span class="badge-sun">Petualangan Selesai!</span></p>
+      <div class="badge-wrap">
+        <img src="img/beranda-2.gif" alt="" aria-hidden="true" class="spark spark-1">
+        <img src="img/beranda-2.gif" alt="" aria-hidden="true" class="spark spark-2">
+        <img src="img/beranda-2.gif" alt="" aria-hidden="true" class="spark spark-3">
+        <img src="img/penutup-badge.png" alt="Lencana Bintang Sains - medali emas bermagnet lucu" class="illu" style="max-width:15rem">
+      </div>
+      <h1 class="page-title">Yey! Selamat, Ilmuwan Cilik!</h1>
+      <p class="lead">Kalian telah bekerja sama dengan sangat baik hari ini. Sebagai tanda keberhasilan, kamu berhak mendapatkan <strong>LENCANA BINTANG SAINS!</strong></p>
+      <p class="lead">Terima kasih atas semangatmu, sampai jumpa di petualangan sains berikutnya!</p>
+    </div>
+  </section>
+
+  <nav class="pagenav" aria-label="Navigasi halaman">
+    <a class="btn" href="refleksi.html">Kembali</a>
+    <a class="btn" href="penulis.html">Lanjut</a>
+  </nav>
+</main>
+
+<footer class="site">
+  <p class="f-title">LADAM — Laman Digital Anak: Dunia Ajaib Magnet</p>
+  <p class="f-sub">Bahan ajar interaktif IPAS Kelas IV SD • Disusun oleh Rizki Alkafia Oktavrianto</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

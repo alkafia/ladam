@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__TITLE__ — LADAM</title>
+<meta name="description" content="LADAM - Laman Digital Anak: Dunia Ajaib Magnet. Bahan ajar interaktif IPAS Kelas IV SD: Menyelidiki Gaya Magnet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">LADAM</a>
+    <button class="hamburger" aria-label="Buka menu navigasi" onclick="document.getElementById('drawer').classList.add('open')">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu navigasi">
+  <div class="drawer-bg" onclick="document.getElementById('drawer').classList.remove('open')"></div>
+  <nav aria-label="Menu Petualangan">
+    <div class="drawer-head">
+      <span>Menu Petualangan</span>
+      <button class="drawer-close" aria-label="Tutup menu" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Beranda</a>
+      <a href="pengantar.html">Pengantar</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="ayo-bersiap.html">Ayo Bersiap</a>
+      <a href="menjelajah.html">Menjelajah</a>
+      <a href="materi.html">Materi</a>
+      <a href="menyelidiki.html">Menyelidiki</a>
+      <a href="detektif-magnet.html">Detektif Magnet</a>
+      <a href="berbagi.html">Berbagi</a>
+      <a href="menyimpulkan.html">Menyimpulkan</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="evaluasi.html">Evaluasi</a>
+      <a href="refleksi.html">Refleksi</a>
+      <a href="penutup.html">Penutup</a>
+      <a href="penulis.html">Penulis</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+  <section class="block">
+    __CONTENT__
+  </section>
+
+  <nav class="pagenav" aria-label="Navigasi halaman">
+    __BACK__
+    __NEXT__
+  </nav>
+</main>
+
+<footer class="site">
+  <p class="f-title">LADAM — Laman Digital Anak: Dunia Ajaib Magnet</p>
+  <p class="f-sub">Bahan ajar interaktif IPAS Kelas IV SD • Disusun oleh Rizki Alkafia Oktavrianto</p>
+</footer>
+
+<script>
+function speak(text, btn){
+  try{
+    var synth = window.speechSynthesis;
+    if(!synth) return;
+    if(synth.speaking){ synth.cancel(); if(btn) btn.classList.remove('playing'); return; }
+    synth.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = 'id-ID'; u.rate = 0.95;
+    u.onend = function(){ if(btn) btn.classList.remove('playing'); };
+    if(btn) btn.classList.add('playing');
+    synth.speak(u);
+  }catch(e){}
+}
+document.querySelectorAll('[data-speak]').forEach(function(b){
+  b.addEventListener('click', function(){ speak(b.getAttribute('data-speak'), b); });
+});
+</script>
+<script src="script.js" defer></script>
+</body>
+</html>

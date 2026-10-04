@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz — LADAM</title>
+<meta name="description" content="LADAM - Laman Digital Anak: Dunia Ajaib Magnet. Bahan ajar interaktif IPAS Kelas IV SD: Menyelidiki Gaya Magnet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">LADAM</a>
+    <button class="hamburger" aria-label="Buka menu navigasi" onclick="document.getElementById('drawer').classList.add('open')">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu navigasi">
+  <div class="drawer-bg" onclick="document.getElementById('drawer').classList.remove('open')"></div>
+  <nav aria-label="Menu Petualangan">
+    <div class="drawer-head">
+      <span>Menu Petualangan</span>
+      <button class="drawer-close" aria-label="Tutup menu" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Beranda</a>
+      <a href="pengantar.html">Pengantar</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="ayo-bersiap.html">Ayo Bersiap</a>
+      <a href="menjelajah.html">Menjelajah</a>
+      <a href="materi.html">Materi</a>
+      <a href="menyelidiki.html">Menyelidiki</a>
+      <a href="detektif-magnet.html">Detektif Magnet</a>
+      <a href="berbagi.html">Berbagi</a>
+      <a href="menyimpulkan.html">Menyimpulkan</a>
+      <a href="quiz.html" class="active">Quiz</a>
+      <a href="evaluasi.html">Evaluasi</a>
+      <a href="refleksi.html">Refleksi</a>
+      <a href="penutup.html">Penutup</a>
+      <a href="penulis.html">Penulis</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+  <section class="block">
+    <div class="card center quiz-hero">
+      <p class="center"><span class="badge-sun">Tantangan Terakhir!</span></p>
+      <div class="badge-wrap">
+        <img src="img/beranda-2.gif" alt="" aria-hidden="true" class="spark spark-1">
+        <img src="img/beranda-2.gif" alt="" aria-hidden="true" class="spark spark-2">
+        <img src="img/beranda-2.gif" alt="" aria-hidden="true" class="spark spark-3">
+        <img src="img/quiz-1.png" alt="Ilustrasi piala bintang" class="illu" style="max-width:10rem">
+      </div>
+      <h1 class="page-title" style="color:var(--navy)">Ayo Bermain dan Perkuat Pemahamanmu!</h1>
+      <p class="lead"><strong>Halo peneliti kecil!</strong></p>
+      <p class="lead">Kamu sudah memperoleh banyak informasi tentang keajaiban gaya magnet. Sudah siap menguji seberapa kuat ingatanmu?</p>
+      <p class="lead">Klik tombol START pada game kuis interaktif di bawah ini, jawab dengan tepat, dan kumpulkan bintang sebanyak-banyaknya untuk membuktikan bahwa kamu adalah MASTER MAGNET hari ini!</p>
+      <p style="margin-top:1.5rem">
+        <a class="btn btn-big cta-glow" href="https://quiz.zep.us/en/play/R57wGZ" target="_blank" rel="noopener">START</a>
+      </p>
+    </div>
+
+    <div class="cards-grid cards-eq cards-3" style="margin-top:1rem">
+      <div class="card center">
+        <p class="center"><span class="n-badge" aria-hidden="true">1</span></p>
+        <h2>Klik START</h2>
+        <p>Buka game kuis interaktif pada tombol di atas.</p>
+      </div>
+      <div class="card center">
+        <p class="center"><span class="n-badge" aria-hidden="true">2</span></p>
+        <h2>Jawab Tepat</h2>
+        <p>Jawab setiap pertanyaan dengan tepat dan cepat.</p>
+      </div>
+      <div class="card center">
+        <p class="center"><span class="n-badge" aria-hidden="true">3</span></p>
+        <h2>Kumpulkan Bintang</h2>
+        <p>Kumpulkan bintang sebanyak-banyaknya dan jadilah MASTER MAGNET!</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pagenav" aria-label="Navigasi halaman">
+    <a class="btn" href="menyimpulkan.html">Kembali</a>
+    <a class="btn" href="evaluasi.html">Lanjut</a>
+  </nav>
+</main>
+
+<footer class="site">
+  <p class="f-title">LADAM — Laman Digital Anak: Dunia Ajaib Magnet</p>
+  <p class="f-sub">Bahan ajar interaktif IPAS Kelas IV SD • Disusun oleh Rizki Alkafia Oktavrianto</p>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

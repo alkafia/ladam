@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menjelajah — LADAM</title>
+<meta name="description" content="LADAM - Laman Digital Anak: Dunia Ajaib Magnet. Bahan ajar interaktif IPAS Kelas IV SD: Menyelidiki Gaya Magnet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">LADAM</a>
+    <button class="hamburger" aria-label="Buka menu navigasi" onclick="document.getElementById('drawer').classList.add('open')">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu navigasi">
+  <div class="drawer-bg" onclick="document.getElementById('drawer').classList.remove('open')"></div>
+  <nav aria-label="Menu Petualangan">
+    <div class="drawer-head">
+      <span>Menu Petualangan</span>
+      <button class="drawer-close" aria-label="Tutup menu" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html">Beranda</a>
+      <a href="pengantar.html">Pengantar</a>
+      <a href="tujuan.html">Tujuan</a>
+      <a href="ayo-bersiap.html">Ayo Bersiap</a>
+      <a href="menjelajah.html" class="active">Menjelajah</a>
+      <a href="materi.html">Materi</a>
+      <a href="menyelidiki.html">Menyelidiki</a>
+      <a href="detektif-magnet.html">Detektif Magnet</a>
+      <a href="berbagi.html">Berbagi</a>
+      <a href="menyimpulkan.html">Menyimpulkan</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="evaluasi.html">Evaluasi</a>
+      <a href="refleksi.html">Refleksi</a>
+      <a href="penutup.html">Penutup</a>
+      <a href="penulis.html">Penulis</a>
+    </div>
+  </nav>
+</div>
+
+<main>
+  <section class="block">
+    <div class="center">
+  <h1 class="page-title">Ayo Menjelajah Informasi!</h1>
+  <p class="lead">Halo ilmuwan kecil! Ternyata kekuatan ajaib itu bernama GAYA MAGNET! Pilih cara belajar yang paling kamu sukai, lalu pahami baik-baik karena informasi ini penting untuk aktivitas berikutnya!</p>
+</div>
+<div class="center" style="margin-top:1.75rem"><span class="badge-navy">Pilih Cara Belajarmu</span></div>
+<div class="cards-grid cards-eq cards-3">
+  <div class="card center">
+    <svg class="opt-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="6" y="14" width="52" height="36" rx="10" fill="#F23B3B"/><polygon points="27,24 27,40 41,32" fill="#fff"/></svg>
+    <h2>Tonton Video: Konsep Dasar Magnet</h2>
+    <p>Klik icon youtube untuk menonton videonya!</p>
+    <p><a class="btn" href="https://www.youtube.com/watch?v=X68X3AzpzNU" target="_blank" rel="noopener">Tonton</a></p>
+  </div>
+  <div class="card center">
+    <svg class="opt-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 16c-5-4-12-5-20-4v36c8-1 15 0 20 4 5-4 12-5 20-4V12c-8-1-15 0-20 4z" fill="#1E5AA8"/><path d="M32 16v36" stroke="#fff" stroke-width="3"/></svg>
+    <h2>Membaca Materi</h2>
+    <p>Klik icon buku untuk membuka materinya!</p>
+    <p><a class="btn" href="materi.html">Buka Materi</a></p>
+  </div>
+  <div class="card center">
+    <svg class="opt-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 24h10l12-10v36L22 40H12z" fill="#00A8CC"/><path d="M40 22c5 5 5 15 0 20M47 15c8 8 8 25 0 33" stroke="#1B2A5B" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+    <h2>Mendengarkan Audio</h2>
+    <p>Klik icon audio untuk mendengarkan materinya!</p>
+    <div class="audio-player">
+      <audio id="ap-audio" src="audio/materi-gaya-magnet.mp3" preload="metadata"></audio>
+      <div class="ap-seekrow">
+        <span class="ap-time" id="ap-cur">0:00</span>
+        <input type="range" id="ap-seek" min="0" max="1000" value="0" aria-label="Geser untuk memilih bagian audio">
+        <span class="ap-time" id="ap-dur">0:00</span>
+      </div>
+      <div class="ap-controls">
+        <button class="ap-skip" id="ap-back" type="button" aria-label="Mundur 5 detik">⏪ 5</button>
+        <button class="btn btn-teal" id="ap-play" type="button">▶ Putar</button>
+        <button class="ap-skip" id="ap-fwd" type="button" aria-label="Maju 5 detik">5 ⏩</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <nav class="pagenav" aria-label="Navigasi halaman">
+    <a class="btn" href="ayo-bersiap.html">Kembali</a>
+    <a class="btn" href="menyelidiki.html">Lanjut</a>
+  </nav>
+</main>
+
+<footer class="site">
+  <p class="f-title">LADAM — Laman Digital Anak: Dunia Ajaib Magnet</p>
+  <p class="f-sub">Bahan ajar interaktif IPAS Kelas IV SD • Disusun oleh Rizki Alkafia Oktavrianto</p>
+</footer>
+
+<script>
+(function(){
+  var audio=document.getElementById('ap-audio');
+  var play=document.getElementById('ap-play');
+  var seek=document.getElementById('ap-seek');
+  var cur=document.getElementById('ap-cur');
+  var dur=document.getElementById('ap-dur');
+  if(!audio||!play) return;
+  var fmt=function(s){ s=Math.max(0,Math.floor(s||0)); var m=Math.floor(s/60); var r=s%60; return m+':'+(r<10?'0':'')+r; };
+  var setLabel=function(){ play.innerHTML=audio.paused?'▶ Putar':'⏸ Jeda'; };
+  audio.addEventListener('loadedmetadata',function(){ dur.textContent=fmt(audio.duration); });
+  audio.addEventListener('timeupdate',function(){
+    if(audio.duration) seek.value=Math.round(audio.currentTime/audio.duration*1000);
+    cur.textContent=fmt(audio.currentTime);
+  });
+  seek.addEventListener('input',function(){
+    if(audio.duration) audio.currentTime=seek.value/1000*audio.duration;
+  });
+  play.addEventListener('click',function(){ if(audio.paused){ audio.play(); } else { audio.pause(); } });
+  audio.addEventListener('play',setLabel);
+  audio.addEventListener('pause',setLabel);
+  audio.addEventListener('ended',function(){ seek.value=0; cur.textContent='0:00'; setLabel(); });
+  document.getElementById('ap-back').addEventListener('click',function(){
+    audio.currentTime=Math.max(0,audio.currentTime-5);
+  });
+  document.getElementById('ap-fwd').addEventListener('click',function(){
+    if(audio.duration) audio.currentTime=Math.min(audio.duration,audio.currentTime+5);
+  });
+  setLabel();
+})();
+</script>
+<script src="script.js" defer></script>
+</body>
+</html>
